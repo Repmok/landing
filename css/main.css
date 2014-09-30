@@ -1,0 +1,173 @@
+	 *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing:    border-box;
+      box-sizing:         border-box;
+    }
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+
+	a{text-decoration: none;}
+
+	li{list-style: none;}
+
+	body {
+		background: #bf2a16;
+		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #444;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-size-adjust: 100%;
+ 	}
+
+ 	header{}
+
+ 	header nav{width: 100%; display: inline-block; box-shadow: 1px 1px 13px #911F0F;}
+
+ 	header .languages{display: inline-block; float: right;}
+ 	header li{float: left; padding: 5px;}
+ 	header li.selected{background-color: #9E2E1E; border-radius: 5px;}
+ 	header li.selected a{font-weight: bold;}
+
+ 	header .opened ul{background-color: #fff}
+
+ 	header a{color: #fff; text-decoration: none;}
+ 	header a:hover{text-decoration: underline;}
+ 	
+ 	#inner-wrap{display: block; margin: 0 auto; width:960px;}
+
+ 	.logo{background: url(../images/kr-logo.png); width: 291px; height: 67px; margin: 0 auto;}
+ 	.logo span{display: none;}
+ 
+ 	#inner-wrap .content{padding: 100px 0;}
+
+ 	#inner-wrap .content .map{width: 510px; margin: 0 auto; padding: 70px 0;}
+ 	#inner-wrap .content img{ max-width: 474px; width: 100%;}
+ 	#inner-wrap .content ul{width: 990px; margin: 0 auto;}
+ 	#inner-wrap .content li{float: left; width: 50%;}
+ 	#inner-wrap .content p{color: #fff; text-align: center;}
+ 	#inner-wrap .content form label.error{clear: left; color: #fff; width: 162px; position: absolute; font-weight: bold; padding: .4em; background-color:rgba(255,0,0,0.5); border-radius: 5px; left: 0; padding: -10px 0;}
+ 	#inner-wrap .content input{padding: 12px 6px; margin: 8px 0; font-size: 2em; border-radius: 5px; border: none; color: #3f474d;}
+
+ 	#formContainer{}
+ 	#inner-wrap .content form{margin: 0 auto; width: 392px;}
+
+ 	#inner-wrap .content .title{font-size: 1.9em; padding: 12px 0;}
+
+ 	#inner-wrap .email{width: 390px;}
+ 	#inner-wrap .name{width: 180px;}
+ 	#inner-wrap .lastname{position: relative; left: 5px; width: 202px;}
+
+ 	#inner-wrap .content .submit{display: block; width: 100%; padding: 18px 0; margin: 8px 0; font-size: 2em; color: #bf2a16; text-align: center; border-radius: 5px; background: #f7a702;}
+ 	#inner-wrap .content .submit:hover{ background-color: #FFB60B; box-shadow: -1px -1px -1px #000}
+
+
+ 	#registerMsg h3{color: #fff; font-size: 1.2em; width: 100%; text-align: center; padding: 5px 0;}
+
+ 	/*Report*/
+ 	.report h1{width: 100%; text-align: center; color: #fff; font-size: 1.4em; padding: 12px 0;}
+ 	.report ul{width: 100%; min-height: 600px}
+ 	.report li{clear: left; color: #fff; padding: 2px 0;}
+ 	.report i{display: block; border-top: 1px solid #fff; margin: 6px 0; width: 100%; clear: left; text-align: center; color: #fff;}
+
+	.push{float: left; clear: left; height: 80px; width: 100%;}
+
+ 	/*footer{display: inline-block; clear: left;  background: url(../images/kr-footer.png) repeat-x 0 0; width: 100%;}*/
+
+ 	footer{
+ 	  position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      width: 100%;
+      background: #9E2E1E url(../images/kr-footer.png) repeat-x 0 0;
+    }
+
+ 	/*footer .content{float: left; background-color: #9E2E1E; position: relative; top: 10px; width: 100%; min-height: 90px;}*/
+ 
+ 	footer ul{max-width: 540px; margin: 8px auto;}
+ 	footer li{float: left;}
+
+ 	footer p{color: #fff; font-size: 1.9em; padding: 15px 0;}
+ 	
+
+ 	footer a{display: block; width: 74px; height: 74px; background-image: url(../images/social-icons.png); background-repeat: no-repeat; margin: 0 13px;}
+	footer a span{float: left; text-indent: -6000px;}
+
+	footer .facebook{background-position: 0px 0}
+	footer .facebook:hover{background-position: 0 -75px;}
+
+	footer .twitter{background-position: -76px 0}
+	footer .twitter:hover{background-position: -76px -75px;}
+
+	footer .google{background-position: -152px 0}
+	footer .google:hover{background-position: -152px -75px}
+
+	footer a.blog{background-position: -232px 0}
+	footer .blog:hover{background-position: -232px -75px}
+
+ 	/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+ .nav-collapse ul{background-color: #BF2A16}
+
+  #inner-wrap{width:100%; top: 5px;}
+
+  #inner-wrap .content p{text-align: center;}
+  #inner-wrap .content form{margin: 0 auto; max-width: 394px}
+
+  #inner-wrap .content .submit{position: relative; width: 94%; left: 4%;}
+
+  #inner-wrap .content ul{width: 100%; float: left;}
+  #inner-wrap .content input{clear: left; position: relative; left: 4%; width: 90%}
+  #inner-wrap .content li{width: 100%;}
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.nav-collapse ul{background-color: #BF2A16}
+	#inner-wrap .content img {max-width: 502px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.nav-collapse ul{background-color: #BF2A16}
+	#inner-wrap .content form {width: auto}
+	#inner-wrap .content .map {display: none;}
+
+	footer{position: relative; clear: left; float: left; width: 100%;}
+	footer li{width: 50%;}
+	footer li:first-child{width: 100%;}
+	footer p{width: 100%; text-align: center;}
+	footer a{margin: 5px auto;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.nav-collapse ul{background-color: #BF2A16}
+   .nav-collapse a{color: #BF2A16;}
+}
+  
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #inner-wrap .content form{max-width: 350px;}
+  .nav-collapse ul{background-color: #fff}
+  .nav-collapse a{color: #BF2A16;}
+}
+
+@media screen and (min-width: 45.0625em) {
+  
+}
+@media screen and (max-width: 45em) {
+  
+  }
+}

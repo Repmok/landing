@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Ticompare</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/responsive-nav.css">
+    <link rel="stylesheet" href="styles/styles.css">
+     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+     <script src="js/jquery.validate.js"></script>
+     <script src="js/querystring-min.js"></script>
+     <script src="js/functions.js"></script>
+     <script type="text/javascript">
+      jQuery(document).on('ready', function () {
+         Translation(jQuery.QueryString("lang"));
+         CheckMessage(jQuery.QueryString("action"));
+         jQuery().ready(function() {
+           jQuery("#signupForm").validate({
+             rules: {
+               Name: {
+               required: true
+             },
+             LastName: {
+               required: true
+             },
+             Email: {
+               required: true,
+               email: true
+             },
+               agree: "required"
+             }
+          });
+        });
+      });
+    </script>
+    <script src="js/responsive-nav.js"></script>
+  </head>
+  <body>
+  <header>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="#" class="home"><span>Home</span></a></li>
+        <li><a href="#" class="about"><span>About</span></a></li>
+        <li><a href="#" class="columns"><span>Columns</span></a></li>
+        <li><a href="#" class="team"><span>Team</span></a></li>
+        <li><a href="#" class="contact"><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content">
+    <ul>
+      <li>
+          <div class="logo">
+             <img src="../images/kr-logo.png">
+          </div>
+          <p class="title"></p>
+          <div id="formContainer">
+              <p class="subtitle"></p>
+              <!-- Message Section --> 
+              <p class="alert"><label id="message"></label></p>
+              <form id="signupForm" action="savedata.php" method="post">
+                  <input type="text" id="Email" name="Email" placeholder="" class="email">
+                  <br/>
+                  <input type="text" id="Name" name="Name" placeholder="" class="name">
+                  <input type="text" id="LastName" name="LastName" placeholder="" class="lastname">
+                  <input type="hidden" id="Language" name="Language" value="english" >
+                  <br/>
+                  <input type="submit" name="submit" class="submit" value="">
+              </form>
+          </div>
+          <div id="registerMsg">
+             <h3 class="msgTitle"></h3>
+             <p class="msgText"></p>    
+          </div>
+      </li>
+      <li>
+          <div class="map">
+              <img src="images/kr-map.png" alt="map"/>
+          </div>
+      </li>
+    </ul> 
+  </div>
+  <footer>
+    <div class="languages">
+      <ul id="langSection">
+          <li id="spanish">
+              <a href="?lang=es">Espa&ntilde;ol</a>
+          </li>
+          <li id="english">
+              <a href="?lang=en">English</a>
+          </li>
+      </ul>
+    </div>
+    <div class="social">
+        <ul>
+            <li><p class="follow"></p></li>
+            <li><a href="https://www.facebook.com/Ticompare" target="_blank" title="facebook" class="facebook"><span>Facebook</span></a></li>
+            <li><a href="https://twitter.com/Ticompare" target="_blank" title="twitter" class="twitter"><span>Twitter</span></a></li>
+            <li><a href="https://googleplus.com/Ticompare" target="_blank" title="google" class="google"><span>Google</span></a></li>
+            <li><a href="http://blog.ticompare.com" title="blog" class="blog"><span>Blog</span></a></li>
+        </ul>
+    </div>
+  </footer>
+  <script>
+    var navigation = responsiveNav(".nav-collapse", {
+      animate: true,        // Boolean: Use CSS3 transitions, true or false
+      transition: 250,      // Integer: Speed of the transition, in milliseconds
+      label: "Menu",        // String: Label for the navigation toggle
+      insert: "after",      // String: Insert the toggle before or after the navigation
+      customToggle: "",     // Selector: Specify the ID of a custom toggle
+      openPos: "relative",  // String: Position of the opened nav, relative or static
+      jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+      init: function(){},   // Function: Init callback
+      open: function(){},   // Function: Open callback
+      close: function(){}   // Function: Close callback
+    });
+  </script>
+  </body>
+</html>

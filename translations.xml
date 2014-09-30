@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <translation id="home">
+        <english>Home</english>
+        <spanish>Inicio</spanish>
+    </translation>
+    <translation id="about">
+        <english>About Ticompare</english>
+        <spanish>Acerca Ticompare</spanish>
+    </translation>
+    <translation id="columns">
+        <english>Blog</english>
+        <spanish>Artículos</spanish>
+    </translation>
+    <translation id="team">
+        <english>Team</english>
+        <spanish>Equipo</spanish>
+    </translation>
+    <translation id="contact">
+        <english>Contact Us</english>
+        <spanish>Contáctenos</spanish>
+    </translation>
+    <translation id="title">
+        <english>R-evolution of purchasing/buying</english>
+        <spanish>R-evolución de las compras</spanish>
+    </translation>
+    <translation id="subtitle">
+        <english>Enter your email below to be the first to try it out:</english>
+        <spanish>Ingrese su correo electrónico para ser el primero en probarlo:</spanish>
+    </translation>
+    <translation id="submit">
+        <english>Signup</english>
+        <spanish>Regístrate</spanish>
+    </translation>
+     <translation id="signup">
+        <english>Signup</english>
+        <spanish>Regístrate</spanish>
+    </translation>
+    <translation id="email">
+        <english>Email</english>
+        <spanish>Correo Electrónico</spanish>
+    </translation>
+    <translation id="name">
+        <english>Name</english>
+        <spanish>Nombre</spanish>
+    </translation>
+    <translation id="lastname">
+        <english>Last Name</english>
+        <spanish>Apellido</spanish>
+    </translation>
+    <translation id="follow">
+      <english>Follow Us</english>
+      <spanish>Síguenos</spanish>
+    </translation>
+    <translation id="msgTitle">
+      <english>Thank you for your registration!</english>
+      <spanish>¡Gracias por tu registro!</spanish>
+    </translation>
+    <translation id="msgText">
+      <english>We have sent you an email confirming your registration. If you haven't received it within the next five minutes, we ask you to please check your spam folder.</english>
+      <spanish>Hemos enviado un mensaje a tu correo electrónico confirmando tu registro. Si no recibes el correo en los próximos 5 minutos te pedimos revisar tu buzón de correo no deseado.</spanish>
+    </translation>
+</translations>
